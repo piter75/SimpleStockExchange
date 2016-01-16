@@ -1,7 +1,9 @@
 package pl.dtv.stock.model;
 
 /**
- * Created by piter on 13/01/16.
+ * Stock Type
+ *
+ * @author Piotr Szczepanik
  */
 public enum StockType {
     COMMON, PREFERRED

@@ -4,20 +4,23 @@ import java.math.BigDecimal;
 import java.time.Instant;
 
 /**
- * Created by piter on 13/01/16.
+ * Trade
+ * Describes trade on a stock
+ *
+ * @author Piotr Szczepanik
  */
 public class Trade {
-    private TradeType type;
+    private final TradeType type;
 
-    private BigDecimal price;
+    private final BigDecimal price;
 
-    private long quantity;
+    private final long quantity;
 
-    private Instant timestamp;
+    private final Instant timestamp;
 
-    private BigDecimal value;
+    private final BigDecimal value;
 
-    public Trade(TradeType type, BigDecimal price, long quantity, Instant timestamp) {
+    public Trade(TradeType type, String symbol, BigDecimal price, long quantity, Instant timestamp) {
         this.type = type;
         this.price = price;
         this.quantity = quantity;
